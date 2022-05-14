@@ -11,20 +11,88 @@
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custom-css -->
-
-    <!-- Demo styles -->
+    <!-- for-navbar -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <style>
-        .swiper {}
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+       
         
-        .swiper-slide {}
+  
+        .swiper2 {
+          width: 50%;
+          height: 50%;
+        }
+  
+        .swiper-slide2 {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
         
-        .swiper-slide img {}
+        }
+  
+        .swiper-slide2 img {
+          display: block;
+          
+          object-fit: cover;
+        }
+      </style>
+
         
-        .swiper-pagination {}
-    </style>
+  
 </head>
 
 <body>
+
+<!-- Header_section_start -->
+<section>
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between z-100 bg-scroll">
+        <div class="flex justify-between items-center ">
+          <span class="text-2xl font-[Poppins] cursor-pointer">
+            <img class="h-10 inline"
+              src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
+            tailwind
+          </span>
+    
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+    
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">SERVICE</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
+          </li>
+    
+          <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+            Get started
+          </button>
+    <h2 class=""></h2>
+        </ul>
+      </nav>
+    
+</section>
+
+<!-- Header_section_End -->
+
 
     <!-- Overview section start -->
 
@@ -41,7 +109,7 @@
                 </p>
             </div>
             <div class="">
-                <button type="button" class="inline-block px-6 py-2 border-4 border-emerald-300 text-black-600 font-medium text-xs leading-tight  rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 tracking-wide ease-in-out">Learn More</button>
+                <button type="button" class="inline-block px-6 py-2 border-4 border-emerald-300 text-black-600 font-medium text-xs leading-tight  rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 tracking-wide ease-in-out text-base">Learn More</button>
             </div>
 
         </div>
@@ -50,7 +118,7 @@
     <!-- Overview section End -->
 
     <!-- Our service Section start -->
-    <section class="container mx-auto mb-28  lg:px-52">
+    <section class="container mx-auto mb-28  lg:px-48">
         <div class=" ">
             <h3 class="text-xl ">What we do</h3>
             <h2 class="text-2xl ">Our Services</h2>
@@ -168,6 +236,28 @@
 
     <!-- four-steps-section-end -->
 
+<!-- Contact-Section-start -->
+
+<section class=" bg-slate-50  bg-[url('/image/banner3.jpg')]  bg-no-repeat  bg-right py-24 bg-blend-luminosity my-20">
+    <div class=" justify-around lg:flex items-center py-20 ">
+        <div class="space-y-4">
+            <h4 class="text-lg font-bold text-emerald-300 tracking-wide text-5xl">CONTACT US IF YOU HAVE ANY QUESTIONS</h4>
+            <h2 class="text-3xl font-normal tracking-wide text-white">OR ARE INTERESTED IN ESTABLISHING A PARTNERSHIP.
+            </h2>
+           
+            </p>
+        </div>
+        <div class="">
+            <button type="button" class="inline-block px-6 py-2 border-4 border-emerald-300  font-medium text-xs leading-tight  rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 tracking-wide ease-in-out text-white text-base">Learn More</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact-Section-end -->
+
+
+
     <!-- our-team-section-start -->
 
     <!-- <section class="container  mx-auto  px-8 my-5">
@@ -191,39 +281,10 @@
     </section> -->
     <section class="container mx-auto mb-28  lg:px-52">
         <h1 class="text-center m-20 text-3xl font-light text-xl font-semibold uppercase ">Meet our Team</h1>
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
+        
+        <div class="swiper mySwiper1">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="border-emerald-300 border-2 p-2  text-center">
-                        <div class="border-slate-100 border-2 p-10 ">
-                            <img class="-mt-16 rounded drop-shadow-lg" src="./image/team3.jpg" alt="team1">
-                            <h2 class="font-bold text-2xl font-serif">Rehana Maryam</h2>
-                            <h6 class="text-zinc-400">Head of Customer Support</h6>
-                            <span class="max-w-xs h-px block bg-zinc-400 my-2 mx-auto"></span>
-                            <div class="flex justify-center space-x-2">
-                                <img class="w-8 h-8" src="/image/social (3).png" alt="facebook">
-                                <img class="w-8 h-8" src="/image/social (2).png" alt="instagram">
-                                <img class="w-8 h-8" src="/image/social (1).png" alt="google">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="border-emerald-300 border-2 p-2  text-center">
-                        <div class="border-slate-100 border-2 p-10 ">
-                            <img class="-mt-16 rounded drop-shadow-lg" src="./image/team4.jpg" alt="team1">
-                            <h2 class="font-bold text-2xl font-serif">Rehana Maryam</h2>
-                            <h6 class="text-zinc-400">Head of Customer Support</h6>
-                            <span class="max-w-xs h-px block bg-zinc-400 my-2 mx-auto"></span>
-                            <div class="flex justify-center space-x-2">
-                                <img class="w-8 h-8" src="/image/social (3).png" alt="facebook">
-                                <img class="w-8 h-8" src="/image/social (2).png" alt="instagram">
-                                <img class="w-8 h-8" src="/image/social (1).png" alt="google">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="swiper-slide">
                     <div class="border-emerald-300 border-2 p-2  text-center">
                         <div class="border-slate-100 border-2 p-10 ">
@@ -289,7 +350,7 @@
                 </div>
 
             </div>
-            <div class="swiper-pagination "></div>
+            <div class="swiper-pagination swiper-pagination1 "></div>
         </div>
 
 
@@ -302,7 +363,7 @@
     <!-- Our-Client-Section-Start -->
 
     <section>
-        <!-- <div class="bg-slate-100 max-w-md p-10 rounded">
+        <div class="bg-slate-100 max-w-md p-10 rounded">
             <div class="flex gap-4">
                 <img class="rounded-full w-12 h-12" src="./image/team1.jpg" alt="team">
                 <h5 class="font-semibold">Hasan Md Mehedi <br>CEO,Demo Tech
@@ -310,54 +371,106 @@
 
             </div>
             <p>I was looking for a call center for operational reasons and hired Suffix call center in 2021. they ended up costing 20% less then the center in Bangladesh and have been doing a great job ever then.</p>
-        </div> -->
-
-
-        <!-- Swiper -->
-        <div class="client myClient">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="bg-slate-100 max-w-md p-10 rounded">
-                        <div class="flex gap-4">
-                            <img class="rounded-full w-12 h-12" src="./image/team2.jpg" alt="team">
-                            <h5 class="font-semibold">Hasan Md Mehedi <br>CEO,Demo Tech
-                            </h5>
-
-                        </div>
-                        <p>I was looking for a call center for operational reasons and hired Suffix call center in 2021. they ended up costing 20% less then the center in Bangladesh and have been doing a great job ever then.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="bg-slate-100 max-w-md p-10 rounded">
-                        <div class="flex gap-4">
-                            <img class="rounded-full w-12 h-12" src="./image/team3.jpg" alt="team">
-                            <h5 class="font-semibold">Hasan Md Mehedi <br>CEO,Demo Tech
-                            </h5>
-
-                        </div>
-                        <p>I was looking for a call center for operational reasons and hired Suffix call center in 2021. they ended up costing 20% less then the center in Bangladesh and have been doing a great job ever then.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="bg-slate-100 max-w-md p-10 rounded">
-                        <div class="flex gap-4">
-                            <img class="rounded-full w-12 h-12" src="./image/team1.jpg" alt="team">
-                            <h5 class="font-semibold">Hasan Md Mehedi <br>CEO,Demo Tech
-                            </h5>
-
-                        </div>
-                        <p>I was looking for a call center for operational reasons and hired Suffix call center in 2021. they ended up costing 20% less then the center in Bangladesh and have been doing a great job ever then.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-pagination"></div>
         </div>
+
+
 
     </section>
 
 
     <!-- Our-Client-Section-End -->
+
+    <!-- Choose_us_section_stat -->
+
+<section class="cotainer lg:mx-48 mx-auto">
+
+<h2 class="text-5xl text-center text-emerald-300  font-bold py-10">Why choose us</h2>
+<div class="grid grid-cols-3 gap-10">
+    <div class="border-2 border-slate-300 p-16 ">
+        <div class="flex gap-2 py-4 items-center  ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 border-2 border-indigo-600 rounded-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            <h4 class="text-xl font-semibold">High Quality Hardware</h4>
+        </div>
+        <p class="font-serif leading-8 font-medium text-lg">We use quality hardware, which is
+        regularly updated to provide reliable
+        support to your clients.
+        </p>
+    </div>
+    <div class="border-2 border-slate-300 p-16 ">
+        <div class="flex gap-2 py-4 items-center  ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 border-2 border-indigo-600 rounded-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            <h4 class="text-xl font-semibold">High Quality Hardware</h4>
+        </div>
+        <p class="font-serif leading-8 font-medium text-lg">We use quality hardware, which is
+        regularly updated to provide reliable
+        support to your clients.
+        </p>
+    </div>
+    <div class="border-2 border-slate-300 p-16 ">
+        <div class="flex gap-2 py-4 items-center  ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 border-2 border-indigo-600 rounded-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            <h4 class="text-xl font-semibold">High Quality Hardware</h4>
+        </div>
+        <p class="font-serif leading-8 font-medium text-lg">We use quality hardware, which is
+        regularly updated to provide reliable
+        support to your clients.
+        </p>
+    </div>
+    <div class="border-2 border-slate-300 p-16 ">
+        <div class="flex gap-2 py-4 items-center  ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 border-2 border-indigo-600 rounded-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            <h4 class="text-xl font-semibold">High Quality Hardware</h4>
+        </div>
+        <p class="font-serif leading-8 font-medium text-lg">We use quality hardware, which is
+        regularly updated to provide reliable
+        support to your clients.
+        </p>
+    </div>
+    <div class="border-2 border-slate-300 p-16 ">
+        <div class="flex gap-2 py-4 items-center  ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 border-2 border-indigo-600 rounded-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            <h4 class="text-xl font-semibold">High Quality Hardware</h4>
+        </div>
+        <p class="font-serif leading-8 font-medium text-lg">We use quality hardware, which is
+        regularly updated to provide reliable
+        support to your clients.
+        </p>
+    </div>
+    <div class="border-2 border-slate-300 p-16 ">
+        <div class="flex gap-2 py-4 items-center  ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 border-2 border-indigo-600 rounded-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            <h4 class="text-xl font-semibold">High Quality Hardware</h4>
+        </div>
+        <p class="font-serif leading-8 font-medium text-lg">We use quality hardware, which is
+        regularly updated to provide reliable
+        support to your clients.
+        </p>
+    </div>
+
+</div>
+</section>
+
+    <!-- Choose_us_section_end -->
+
+
 
 
     <!-- Swiper JS -->
@@ -366,13 +479,15 @@
     <!-- Initialize Swiper -->
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper1 = new Swiper(".mySwiper1", {
             slidesPerView: 1,
             spaceBetween: 10,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".swiper-pagination1",
                 clickable: true,
             },
+            loop: true,
+        loopFillGroupWithBlank: true,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -393,22 +508,12 @@
 
             },
         });
+// nav-bar
 
-        // client-comments
-        // var client = new Swiper(".myClient", {
-        //     direction: "vertical",
-        //     slidesPerView: 1,
-        //     spaceBetween: 30,
-        //     mousewheel: true,
-        //     pagination: {
-        //         el: ".swiper-pagination",
-        //         clickable: true,
-        //     },
-        //     autoplay: {
-        //         delay: 2500,
-        //         disableOnInteraction: false,
-        //     },
-        // });
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
     </script>
 
 </body>
