@@ -1,118 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suffix Call-Center</title>
+    <!-- swiper_link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom-css -->
+
+    <!-- Demo styles -->
+    <style>
+        .swiper {}
+        
+        .swiper-slide {}
+        
+        .swiper-slide img {}
+        
+        .swiper-pagination {}
+    </style>
 </head>
+
 <body>
 
-<!-- Overview section start -->
+    <!-- Overview section start -->
 
-<section class="container mx-auto  flex justify-between bg-[url('/image/map.png')]  bg-no-repeat  bg-right">
-  <div>
-    <h4 class="text-lg font-bold">Overview</h4>
-    <h2 class="text-2xl font-bold">Suffix IT Call Center</h2>
-    <p class="font-medium max-w-xl">
-      We are a reliable and fast-growing outsourcing call center company that works
-with clients from all over the world, providing the professional services of a data
-enrichment, direct email marketing, lead generation, market research and
-appointment setting with a goal of helping businesses grow and reach their
-goals. We oer professional support for inbound calling, outbound calling, direct
-response, fundraising, social media management, web development, call
-scoring, data entry, email marketing, survey work, and live chat. Whether you are
-a low-budget small business or a large corporation, we can add value to your
-business. We oer flexible and individualized pricing plans guaranteed to fit
-your business.
+    <section class=" bg-slate-50  bg-[url('/image/map.png')]  bg-no-repeat  bg-right py-20">
+        <div class=" justify-around lg:flex items-center ">
+            <div>
+                <h4 class="text-lg font-bold text-emerald-300 tracking-wide">Overview</h4>
+                <h2 class="text-xl font-normal tracking-wide">Suffix IT Call Center</h2>
+                <p class="font-medium max-w-xl">
+                    We are a reliable and fast-growing outsourcing call center company that works with clients from all over the world, providing the professional services of a data enrichment, direct email marketing, lead generation, market research and appointment setting
+                    with a goal of helping businesses grow and reach their goals. We oer professional support for inbound calling, outbound calling, direct response, fundraising, social media management, web development, call scoring, data entry, email
+                    marketing, survey work, and live chat. Whether you are a low-budget small business or a large corporation, we can add value to your business. We oer flexible and individualized pricing plans guaranteed to fit your business.
 
-    </p>
-  </div>
-  <button>Learn More</button>
-</section>
+                </p>
+            </div>
+            <div class="">
+                <button type="button" class="inline-block px-6 py-2 border-4 border-emerald-300 text-black-600 font-medium text-xs leading-tight  rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 tracking-wide ease-in-out">Learn More</button>
+            </div>
 
-<!-- Overview section End -->
-
-<!-- Our service Section start -->
-<section class="container mx-auto mb-28">
-  <h3 class="text-xl ">What we do</h3>
-  <h2 class="text-2xl ">Our Services</h2>
-  <p>We partner with your sales team to deliver customers at-scale.</p>
-  <div class="grid grid-cols-3 space-x-10 mx-auto">
-
-    <div >
-      
-      <div>
-        <img class="rounded-lg" src="/image/service1.jpg" alt="support">
-      </div>
-      <div class="bg-black w-80 mx-auto p-3 rounded-t-lg -my-14 z-50 relative space-y-2 ">
-        <p class="text-white text-xs">Live Chat Support</p>
-      <div class="bg-emerald-200 h-2 z-10 " style="width: 25%"></div>
-      </div>
-
-    </div >
-
-
-
-   
-    
-
-
-    </div>
-   
-
-</section>
-
-<!-- Our service Section End -->
-
-<!-- Offer-section-start -->
-<section class="container mx-auto grid grid-cols-2 gap-10">
-  <img src="/image/call.jpg" alt="">
-  <div>
-    <h4 class="text-emerald-300 font-bold text-xl">What we offer</h4>
-    <h4 class="text-2xl font-medium" >Our Solutions</h4>
-    <h1 class="font-bold text-2xl">01. Lead Generation</h1>
-    <p class="font-bold font-medium mx-10 font-serif">We provide dedicated research specialists who source and validate all the
-      contact data available on your addressable market to define lead criteria
-      specific for your business niche.</p>
-  </div>
-</section>
-<!-- Offer-section-end -->
-
-<!-- four-steps-section-start -->
-
-<section class="container h-80 mx-auto bg-[url('/image/map2.png')] bg-no-repeat bg-fixed bg-right">
-  <div class="w-80 mx-auto">
-    <h4 class="text-emerald-300 font-bold text-xl">Four easy steps</h4>
-    <h4 class="text-2xl font-medium">How to Get Started</h4>
-  </div>
-
-
-</section>
-
-<!-- four-steps-section-end -->
-
-<!-- our-team-section-start -->
-<section class="container h-80 mx-auto">
-  <h1>Meet our Team</h1>
-  <div class="grid grid-cols-3 ">
-    <div class="border-emerald-300 border-2 p-10 text-center">
-        <img src="./image/team1.jpg" alt="team1">
-        <h2 class="font-bold text-2xl">Rehana Maryam</h2>
-        <h6>Head of Customer Support</h6>
-        <span class="w-20 h-px block bg-slate-600 mx-auto"></span>
-        <div class="flex justify-center ">
-          <img class="w-8 h-8" src="/image/social (3).png" alt="facebook">
-          <img class="w-8 h-8" src="/image/social (2).png" alt="instagram">
-          <img class="w-8 h-8" src="/image/social (1).png" alt="google">     
         </div>
-    </div>
-  </div>
-</section>
-<!-- our-team-section-end -->
+    </section>
 
-  
+    <!-- Overview section End -->
+
+    <!-- Our service Section start -->
+    <section class="container mx-auto mb-28  lg:px-52">
+        <div class=" ">
+            <h3 class="text-xl ">What we do</h3>
+            <h2 class="text-2xl ">Our Services</h2>
+            <p>We partner with your sales team to deliver customers at-scale.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3  md:gap-10  ">
+
+
+
+            <div class="">
+                <img class="rounded-lg " src="/image/service4.jpg" alt="support">
+                <div class="bg-black -my-14 max-w-[80%]  mx-auto p-3 mb-2 rounded-t-lg   relative space-y-2 bottom-0">
+                    <p class="text-white text-xs">Live Chat Support</p>
+                    <div class="bg-emerald-200 h-2 z-10 " style="width: 25%"></div>
+                </div>
+            </div>
+
+
+
+
+            <div class="">
+                <img class="rounded-lg " src="/image/service2.jpg" alt="support">
+                <div class="bg-black -my-14 max-w-[80%]  mx-auto p-3 mb-2 rounded-t-lg   relative space-y-2 bottom-0">
+                    <p class="text-white text-xs">Live Chat Support</p>
+                    <div class="bg-emerald-200 h-2 z-10 " style="width: 25%"></div>
+                </div>
+            </div>
+
+
+            <div class="">
+                <img class="rounded-lg " src="/image/service3.jpg" alt="support">
+                <div class="bg-black -my-14 max-w-[80%]  mx-auto p-3 mb-2  rounded-t-lg   relative space-y-2 bottom-0">
+                    <p class="text-white text-xs">Live Chat Support</p>
+                    <div class="bg-emerald-200 h-2 z-10 " style="width: 25%"></div>
+                </div>
+            </div>
+
+            <div class="">
+                <img class="rounded-lg " src="/image/service5.jpg" alt="support">
+                <div class="bg-black -my-14 max-w-[80%]  mx-auto p-3 mb-2 rounded-t-lg   relative space-y-2 bottom-0">
+                    <p class="text-white text-xs">Live Chat Support</p>
+                    <div class="bg-emerald-200 h-2 z-10 " style="width: 25%"></div>
+                </div>
+            </div>
+
+            <div class="">
+                <img class="rounded-lg " src="/image/service6.jpg" alt="support">
+                <div class="bg-black -my-14 max-w-[80%]  mx-auto p-3 mb-2 rounded-t-lg   relative space-y-2 bottom-0">
+                    <p class="text-white text-xs">Live Chat Support</p>
+                    <div class="bg-emerald-200 h-2 z-10 " style="width: 25%"></div>
+                </div>
+            </div>
+
+            <div class="">
+                <img class="rounded-lg " src="/image/service7.jpg" alt="support">
+                <div class="bg-black -my-14 max-w-[80%]  mx-auto p-3 mb-2  rounded-t-lg   relative space-y-2 bottom-0">
+                    <p class="text-white text-xs">Live Chat Support</p>
+                    <div class="bg-emerald-200 h-2 z-10 " style="width: 25%"></div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <!-- Our service Section End -->
+
+    <!-- Offer-section-start -->
+    <section class="container md:flex justify-around">
+
+        <img src="/image/call.jpg" alt="Solutions">
+        <div class="space-y-4 ">
+            <h4 class="text-emerald-300 font-bold text-xl">What we offer</h4>
+            <h4 class="text-2xl font-medium">Our Solutions</h4>
+            <div>
+                <h1 class="font-bold text-2xl">01. Lead Generation</h1>
+                <p class="font-bold font-medium max-w-2xl font-serif">We provide dedicated research specialists who source and validate all the contact data available on your addressable market to define lead criteria specific for your business niche.</p>
+            </div>
+            <div>
+                <h1 class="font-bold text-2xl">02. Dedicated Team</h1>
+                <p class="font-bold font-medium max-w-2xl font-serif">We provide you a whole team of professionals dedicated to working exclusively on your projects. They will be able to constantly keep in touch with you and your team, allowing you to keep a full control of all the working processes.
+                </p>
+            </div>
+            <div>
+                <h1 class="font-bold text-2xl">03. Data Analyzing</h1>
+                <p class="font-bold font-medium max-w-2xl font-serif">A team of experienced researchers analyze your CRM to pinpoint out-of-date account data and replace it. We map out a data cleansing strategy to keep your contact and account data accurate.
+                </p>
+            </div>
+            <div>
+                <h1 class="font-bold text-2xl">04. Multi-lingual support</h1>
+                <p class="font-bold font-medium max-w-2xl font-serif">Our multilingual agents provide customer support for English, German, French, Spanish, and Russian speaking customers.
+                </p>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- Offer-section-end -->
+
+    <!-- four-steps-section-start -->
+    <!-- 
+    <section class="container h-80 mx-auto bg-[url('/image/map2.png')] bg-no-repeat bg-fixed bg-right">
+        <div class="w-80 mx-auto">
+            <h4 class="text-emerald-300 font-bold text-xl">Four easy steps</h4>
+            <h4 class="text-2xl font-medium">How to Get Started</h4>
+        </div>
+
+
+    </section> -->
+
+    <!-- four-steps-section-end -->
+
+    <!-- our-team-section-start -->
+
+    <!-- <section class="container  mx-auto  px-8 my-5">
+        <h1 class="text-center m-20 text-3xl font-light text-xl font-semibold uppercase ">Meet our Team</h1>
+        <div class="md:grid grid-cols-3">
+            <div class="border-emerald-300 border-2 p-2  text-center">
+                <div class="border-slate-100 border-2 p-10 ">
+                    <img class="-mt-16 rounded drop-shadow-lg" src="./image/team1.jpg" alt="team1">
+                    <h2 class="font-bold text-2xl font-serif">Rehana Maryam</h2>
+                    <h6 class="text-zinc-400">Head of Customer Support</h6>
+                    <span class="max-w-xs h-px block bg-zinc-400 my-2 mx-auto"></span>
+                    <div class="flex justify-center space-x-2">
+                        <img class="w-8 h-8" src="/image/social (3).png" alt="facebook">
+                        <img class="w-8 h-8" src="/image/social (2).png" alt="instagram">
+                        <img class="w-8 h-8" src="/image/social (1).png" alt="google">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+    <section class="container mx-auto mb-28  lg:px-52">
+        <h1 class="text-center m-20 text-3xl font-light text-xl font-semibold uppercase ">Meet our Team</h1>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="border-emerald-300 border-2 p-2  text-center">
+                        <div class="border-slate-100 border-2 p-10 ">
+                            <img class="-mt-16 rounded drop-shadow-lg" src="./image/team3.jpg" alt="team1">
+                            <h2 class="font-bold text-2xl font-serif">Rehana Maryam</h2>
+                            <h6 class="text-zinc-400">Head of Customer Support</h6>
+                            <span class="max-w-xs h-px block bg-zinc-400 my-2 mx-auto"></span>
+                            <div class="flex justify-center space-x-2">
+                                <img class="w-8 h-8" src="/image/social (3).png" alt="facebook">
+                                <img class="w-8 h-8" src="/image/social (2).png" alt="instagram">
+                                <img class="w-8 h-8" src="/image/social (1).png" alt="google">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="border-emerald-300 border-2 p-2  text-center">
+                        <div class="border-slate-100 border-2 p-10 ">
+                            <img class="-mt-16 rounded drop-shadow-lg" src="./image/team4.jpg" alt="team1">
+                            <h2 class="font-bold text-2xl font-serif">Rehana Maryam</h2>
+                            <h6 class="text-zinc-400">Head of Customer Support</h6>
+                            <span class="max-w-xs h-px block bg-zinc-400 my-2 mx-auto"></span>
+                            <div class="flex justify-center space-x-2">
+                                <img class="w-8 h-8" src="/image/social (3).png" alt="facebook">
+                                <img class="w-8 h-8" src="/image/social (2).png" alt="instagram">
+                                <img class="w-8 h-8" src="/image/social (1).png" alt="google">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="border-emerald-300 border-2 p-2  text-center">
+                        <div class="border-slate-100 border-2 p-10 ">
+                            <img class="-mt-16 rounded drop-shadow-lg" src="./image/team1.jpg" alt="team1">
+                            <h2 class="font-bold text-2xl font-serif">Rehana Maryam</h2>
+                            <h6 class="text-zinc-400">Head of Customer Support</h6>
+                            <span class="max-w-xs h-px block bg-zinc-400 my-2 mx-auto"></span>
+                            <div class="flex justify-center space-x-2">
+                                <img class="w-8 h-8" src="/image/social (3).png" alt="facebook">
+                                <img class="w-8 h-8" src="/image/social (2).png" alt="instagram">
+                                <img class="w-8 h-8" src="/image/social (1).png" alt="google">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="border-emerald-300 border-2 p-2  text-center">
+                        <div class="border-slate-100 border-2 p-10 ">
+                            <img class="-mt-16 rounded drop-shadow-lg" src="./image/team2.jpg" alt="team1">
+                            <h2 class="font-bold text-2xl font-serif">Rehana Maryam</h2>
+                            <h6 class="text-zinc-400">Head of Customer Support</h6>
+                            <span class="max-w-xs h-px block bg-zinc-400 my-2 mx-auto"></span>
+                            <div class="flex justify-center space-x-2">
+                                <img class="w-8 h-8" src="/image/social (3).png" alt="facebook">
+                                <img class="w-8 h-8" src="/image/social (2).png" alt="instagram">
+                                <img class="w-8 h-8" src="/image/social (1).png" alt="google">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="border-emerald-300 border-2 p-2  text-center">
+                        <div class="border-slate-100 border-2 p-10 ">
+                            <img class="-mt-16 rounded drop-shadow-lg" src="./image/team3.jpg" alt="team1">
+                            <h2 class="font-bold text-2xl font-serif">Rehana Maryam</h2>
+                            <h6 class="text-zinc-400">Head of Customer Support</h6>
+                            <span class="max-w-xs h-px block bg-zinc-400 my-2 mx-auto"></span>
+                            <div class="flex justify-center space-x-2">
+                                <img class="w-8 h-8" src="/image/social (3).png" alt="facebook">
+                                <img class="w-8 h-8" src="/image/social (2).png" alt="instagram">
+                                <img class="w-8 h-8" src="/image/social (1).png" alt="google">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="border-emerald-300 border-2 p-2  text-center">
+                        <div class="border-slate-100 border-2 p-10 ">
+                            <img class="-mt-16 rounded drop-shadow-lg" src="./image/team4.jpg" alt="team1">
+                            <h2 class="font-bold text-2xl font-serif">Rehana Maryam</h2>
+                            <h6 class="text-zinc-400">Head of Customer Support</h6>
+                            <span class="max-w-xs h-px block bg-zinc-400 my-2 mx-auto"></span>
+                            <div class="flex justify-center space-x-2">
+                                <img class="w-8 h-8" src="/image/social (3).png" alt="facebook">
+                                <img class="w-8 h-8" src="/image/social (2).png" alt="instagram">
+                                <img class="w-8 h-8" src="/image/social (1).png" alt="google">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="swiper-pagination "></div>
+        </div>
+
+
+
+
+        <!-- Swiper JS -->
+    </section>
+    <!---- our-team-section-end -->
+
+    <!-- Our-Client-Section-Start -->
+
+    <section>
+        <!-- <div class="bg-slate-100 max-w-md p-10 rounded">
+            <div class="flex gap-4">
+                <img class="rounded-full w-12 h-12" src="./image/team1.jpg" alt="team">
+                <h5 class="font-semibold">Hasan Md Mehedi <br>CEO,Demo Tech
+                </h5>
+
+            </div>
+            <p>I was looking for a call center for operational reasons and hired Suffix call center in 2021. they ended up costing 20% less then the center in Bangladesh and have been doing a great job ever then.</p>
+        </div> -->
+
+
+        <!-- Swiper -->
+        <div class="client myClient">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="bg-slate-100 max-w-md p-10 rounded">
+                        <div class="flex gap-4">
+                            <img class="rounded-full w-12 h-12" src="./image/team2.jpg" alt="team">
+                            <h5 class="font-semibold">Hasan Md Mehedi <br>CEO,Demo Tech
+                            </h5>
+
+                        </div>
+                        <p>I was looking for a call center for operational reasons and hired Suffix call center in 2021. they ended up costing 20% less then the center in Bangladesh and have been doing a great job ever then.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-slate-100 max-w-md p-10 rounded">
+                        <div class="flex gap-4">
+                            <img class="rounded-full w-12 h-12" src="./image/team3.jpg" alt="team">
+                            <h5 class="font-semibold">Hasan Md Mehedi <br>CEO,Demo Tech
+                            </h5>
+
+                        </div>
+                        <p>I was looking for a call center for operational reasons and hired Suffix call center in 2021. they ended up costing 20% less then the center in Bangladesh and have been doing a great job ever then.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-slate-100 max-w-md p-10 rounded">
+                        <div class="flex gap-4">
+                            <img class="rounded-full w-12 h-12" src="./image/team1.jpg" alt="team">
+                            <h5 class="font-semibold">Hasan Md Mehedi <br>CEO,Demo Tech
+                            </h5>
+
+                        </div>
+                        <p>I was looking for a call center for operational reasons and hired Suffix call center in 2021. they ended up costing 20% less then the center in Bangladesh and have been doing a great job ever then.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+
+    <!-- Our-Client-Section-End -->
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                }
+
+            },
+        });
+
+        // client-comments
+        // var client = new Swiper(".myClient", {
+        //     direction: "vertical",
+        //     slidesPerView: 1,
+        //     spaceBetween: 30,
+        //     mousewheel: true,
+        //     pagination: {
+        //         el: ".swiper-pagination",
+        //         clickable: true,
+        //     },
+        //     autoplay: {
+        //         delay: 2500,
+        //         disableOnInteraction: false,
+        //     },
+        // });
+    </script>
+
 </body>
+
 </html>
