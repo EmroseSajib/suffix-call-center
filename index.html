@@ -15,29 +15,28 @@
     <style>
         html,
         body {
-            /* position: relative;
-            height: 100%; */
+            position: relative;
+            height: 100%;
         }
         
         body {
-            /* background: #eee;
+            background: #eee;
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
             font-size: 14px;
             color: #000;
             margin: 0;
-            padding: 0; */
+            padding: 0;
         }
         
-        .swiper {
-            /* width: 100%;
-            height: 100%; */
+        .swiper2 {
+            width: 100%;
+            height: 100%;
         }
         
-        .swiper-slide {
-            /* text-align: center;
+        .swiper-slide2 {
+            text-align: center;
             font-size: 18px;
             background: #fff;
-          
             display: -webkit-box;
             display: -ms-flexbox;
             display: -webkit-flex;
@@ -49,11 +48,14 @@
             -webkit-box-align: center;
             -ms-flex-align: center;
             -webkit-align-items: center;
-            align-items: center; */
+            align-items: center;
         }
         
-        .swiper-slide img {
+        .swiper-slide2 img {
             display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 
@@ -63,6 +65,42 @@
 
 <body>
 
+    <!-- Slider_section_start -->
+
+    <section>
+        <div class="swiper  mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="py-32 swiper-slide swiper-slide2 bg-cover bg-center bg-[url('/image/banner4.jpg')]   bg-no-repeat ">
+                    <div class="">
+
+                        <h2 class="text-6xl font-semibold text-white">We Take Care <br> Of Your Customer <span class="block bg-emerald-300 w-36 bg-emerald-100 h-2 "></span> </h2>
+
+                        <button type="button" class="inline-block px-6 py-2 border-4 border-emerald-300 text-black-600 font-medium text-xs leading-tight  rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 tracking-wide ease-in-out text-base">Learn More</button>
+                    </div>
+
+                </div>
+                <div class="swiper-slide swiper-slide2 bg-cover bg-center bg-[url('/image/banner.jpg')]   bg-no-repeat">
+                    <div class="">
+
+                        <h2 class="text-6xl font-semibold text-white">We Take Care <br> Of Your Customer <span class="block bg-emerald-300 w-36 bg-emerald-100 h-2 "></span> </h2>
+
+                        <button type="button" class="inline-block px-6 py-2 border-4 border-emerald-300 text-black-600 font-medium text-xs leading-tight  rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 tracking-wide ease-in-out text-base">Learn More</button>
+                    </div>
+                </div>
+                <div class="swiper-slide2 bg-cover bg-center bg-[url('/image/banner2.jpg')]   bg-no-repeat">
+                    <div class="">
+
+                        <h2 class="text-6xl font-semibold text-white">We Take Care <br> Of Your Customer <span class="block bg-emerald-300 w-36 bg-emerald-100 h-2 "></span> </h2>
+
+                        <button type="button" class="inline-block px-6 py-2 border-4 border-emerald-300 text-black-600 font-medium text-xs leading-tight  rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 tracking-wide ease-in-out text-base">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination2 swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Slider_section_end -->
 
 
     <!-- Overview section start -->
@@ -627,11 +665,22 @@
             },
         });
     </script>
-
-
-
-
-
+    <script>
+        var swiper2 = new Swiper(".mySwiper2", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination2",
+                clickable: true,
+            },
+        });
+    </script>
 
 </body>
 
